@@ -1,5 +1,5 @@
-# Harmony-RAT
-A simple RAT written in Python that uses Discord as it's C2 server.  
+# Harmony-Proof of Concept
+A Proof of Concept remote administration tool developed for cybersecurity research and educational purposes.  It demonstrated how modern malware can leverage legitimate cloud services for command anc control communications. 
 
 
 **Features**  
@@ -25,8 +25,6 @@ and create a webhook that posts in the 'check-in' channel**
 * executable filename
 
 **Into the script around line 32.**
-
-**If you want an EXE use PyInstaller with harmony.py**  
 ___
 Once harmony is executed it will create a new category on your server named with the hardware ID of the computer that executed it.  
 
