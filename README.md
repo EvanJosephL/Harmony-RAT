@@ -1,5 +1,5 @@
 # Harmony-Proof of Concept
-A Proof of Concept remote administration tool developed for cybersecurity research and educational purposes.  It demonstrated how modern malware can leverage legitimate cloud services for command anc control communications. 
+A Proof of Concept remote administration tool developed for cybersecurity research and educational purposes.  It demonstrated how modern malware can leverage legitimate cloud services for command and control communications. 
 
 
 **Features**  
