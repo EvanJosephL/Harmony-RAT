@@ -1,5 +1,5 @@
 # Harmony-Proof of Concept
-A Proof of Concept remote administration tool developed for cybersecurity research and educational purposes.  It demonstrated how modern malware can leverage legitimate cloud services for command and control communications. 
+A Proof of Concept remote administration tool developed for cybersecurity research and educational purposes.  It demonstrates how modern malware can leverage legitimate cloud services for command and control communications. 
 
 
 **Features**  
@@ -13,6 +13,27 @@ A Proof of Concept remote administration tool developed for cybersecurity resear
 
 # Disclaimer
 All code provided in this repository is for educational purposes only.
+
+# Detection Opportunities
+Harmony generates attacker like activity that can be used to develop and validate defensive detections. Depending on the features excersised defenders may observe:
+- Discord-based command-and-control activity using a bot token, webhooks, channels, and server-side tasking
+- System reconnaissance using commands such as `wmic`, `getmac`, `whoami`, and external IP lookup through `ipinfo.io`
+- Remote shell execution through `subprocess.Popen(..., shell=True)`
+- File upload and download behavior involving Discord attachments and local filesystem paths
+- Screenshot capture through Windows desktop/GDI APIs
+- Chrome credential access through the `Login Data` database, `Local State`, DPAPI, and AES-GCM decryption
+- Persistence attempts through the current user Run registry key and the Startup folder
+- File hiding through the Windows `attrib +H` command
+
+# Defensive Engineering
+Harmony was developed as an educational proof of concept for understanding attacker like behaviours and improving defensive visibility. The project can be used to:
+- Generate realistic telemetry for blue team and malware analysis labs
+- Practice identifying command-and-control behavior over legitimate cloud services
+- Build and validate detections for suspicious process execution, registry persistence, screenshot capture, and browser credential access
+- Study how host artifacts appear in Windows logs, EDR telemetry, and network monitoring tools
+- Map observed behaviors to MITRE ATT&CK techniques
+- Understand how defensive controls can detect or limit common post-exploitation actions
+
 
 # Usage  
 **In your server you MUST create a text channel named 'check-in'  
