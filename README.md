@@ -36,6 +36,16 @@ Harmony was developed as an educational proof of concept for understanding attac
 - Map observed behaviors to MITRE ATT&CK techniques
 - Understand how defensive controls can detect or limit common post-exploitation actions
 
+# MITRE ATT&CK Techniques Explored
+- Application Layer Protocol (T1071)
+- Command and Scripting Interpreter (T1059)
+- Credentials from Password Stores (T1555)
+- Hide Artifacts (T1564)
+- Explores file transfer behaviors associated with Ingress Tool Transfer (T1105).
+- Registry Run Keys / Startup Folder (T1547.001)
+- Screen Capture (T1113)
+- System Information Discovery (T1082)
+- System Owner/User Discovery (T1033)
 
 # Usage  
 **In your server you MUST create a text channel named 'check-in'  
