@@ -12,7 +12,9 @@ A Proof of Concept remote administration tool developed for cybersecurity resear
 - And more...
 
 # Disclaimer
-All code provided in this repository is for educational purposes only.
+Harmony is an educational proof of concept project intended for cybersecurity research, malware analysis, and defensive security education. It was developed to explore how attacker behaviors can manifest on Windows systems and how those behaviors may be detected and analyzed in a controlled environment.
+
+This project is not intended for unauthorized access, deployment on systems without permission, or malicious use.
 
 # Detection Opportunities
 Harmony generates attacker like activity that can be used to develop and validate defensive detections. Depending on the features excersised defenders may observe:
